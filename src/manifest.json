@@ -1,25 +1,32 @@
 {
-  "manifest_version": 2,
-
-  "name": "SAML Message Decoder",
-  "description": "A Chrome extension that collects and displays SAML messages",
-  "version": "1.0.1",
-
-  "browser_action": {
-    "default_popup": "web/index.html"
-  },
-
-  "icons": {
-    "16": "icon_16.png",
-    "48": "icon_48.png",
-    "128": "icon_128.png"
-  },
-
-  "permissions": [
-    "<all_urls>","webRequest"
-  ],
-
-  "background": {
-    "page": "web/background/background.html"
-  }
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "manifest_version": 2,
+    "name": "DeCromified SAML Message Decoder",
+    "description": "A Firefox WebExtension that collects and displays SAML messages. This is a copy from SAML Message Decoder in Chrome Web Store, no other changes made.",
+    "version": "1.0.1",
+    "browser_action": {
+        "default_popup": "web/index.html",
+        "default_icon": {
+          "16": "icon_16.png",
+          "32": "icon_32.png"
+        }
+    },
+    "icons": {
+        "16": "icon_16.png",
+        "32": "icon_32.png",
+        "19": "icon_19.png",
+        "38": "icon_38.png",
+        "48": "icon_48.png",
+        "96": "icon_96.png",
+        "128": "icon_128.png"
+    },
+    "permissions": ["<all_urls>", "webRequest"],
+    "background": {
+        "page": "web/background/background.html"
+    },
+    "applications": {
+        "gecko": {
+            "id": "{bc3087c7-c0ea-4485-9e61-9808af855cce}"
+        }
+    }
 }
